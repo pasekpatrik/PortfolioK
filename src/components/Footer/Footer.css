@@ -1,0 +1,59 @@
+footer {
+    height: 10vh;
+    padding: 0 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer .social-footer {
+    height: 3vh;
+    padding: 0 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+}
+
+footer .social-footer a svg {
+    color: var(--fourth-color);
+    font-size: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+footer span {
+    font-size: 13px;
+}
+
+footer span a {
+    color: var(--fourth-color);
+    font-size: 13px;
+    transition: all 0.3s;
+}
+
+@media (hover:hover) {
+    footer span a:hover {
+        border-bottom: 1px solid var(--fourth-color);
+    }
+
+    footer .social-footer a svg:hover {
+        color: var(--third-color);
+    }
+}
+
+@media (max-width: 900px) {
+    footer span{
+        font-size: 9px;
+    }
+
+    footer span a {
+        font-size: 9px;
+    }
+}

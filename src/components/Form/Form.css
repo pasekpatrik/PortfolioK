@@ -1,0 +1,137 @@
+form {
+    height: 580px;
+    width: 480px;
+
+    background-color: var(--fourth-color);
+    border-radius: 8px;
+    color: var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+}
+
+form .container-input {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    flex-direction: column;
+    gap: 10px;
+}
+
+form .input-text {
+    border: 2px solid var(--primary-color);
+    outline: none;
+    background: var(--primary-color);
+
+    width: 320px;
+    height: 42px;
+    padding: 0 15px;
+
+    border-radius: 8px;
+    font-size: 18px;
+    color: var(--fourth-color);
+
+    transition: all 0.3s;
+}
+
+form .input-text:focus {
+    width: 336px;
+}
+
+form textarea {
+    border: 2px solid var(--primary-color);
+    background: none;
+    outline: none;
+    padding: 12px;
+    color: var(--primary-color);
+
+    width: 320px;
+
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+form textarea:focus {
+    width: 336px;
+}
+
+form #submit {
+    border: none;
+    outline: none;
+    background: var(--third-color);
+    color: var(--fourth-color);
+
+    width: 180px;
+    height: 48px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    border-radius: 8px;
+    cursor: url('../../assets/pointer.png'), default;
+    transition: all 0.3s;
+}
+
+form #container-error {
+    height: 20px;
+    width: 320px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form #container-error p {
+    animation: opacity 0.3s;
+}
+
+@media (hover:hover) {
+    form #submit:hover {
+        box-shadow: var(--third-color) 0px 5px 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+        margin-top: 30%;
+    }
+
+    form .container-input {
+        width: 100%;
+
+        align-items: center;
+    }
+
+    form .input-text {
+        width: 70%;
+    }
+
+    form .input-text:focus {
+        width: 80%;
+    }
+
+    form textarea {
+        width: 70%;
+    }
+
+    form textarea:focus {
+        width: 80%
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
