@@ -10,7 +10,7 @@
     position: fixed;
 
     background-color: var(--fourth-color);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, .35) 0px 5px 15px;
 
     z-index: 2;
 }
@@ -33,7 +33,7 @@
 
 .navBar ul li a {
     font-size: 20px;
-    transition: all 0.3s;
+    transition: all .3s;
 }
 
 .navBar ul li a.active {
@@ -54,9 +54,9 @@
     background-color: var(--primary-color);
     border-radius: 8px;
     display: block;
-    
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 @media (hover:hover) {
@@ -65,7 +65,7 @@
     }
 }
 
-@media (max-width: 768px){
+@media only screen and (max-width: 900px) {
     .hamburger {
         display: block;
     }
@@ -91,14 +91,14 @@
         background-color: var(--fourth-color);
         text-align: center;
         position: fixed;
-        
+
         flex-direction: column;
         gap: 0;
 
-        transition: 0.3s;
+        transition: .3s;
     }
 
-    .navBar ul li{
+    .navBar ul li {
         margin: 10px 0;
     }
 

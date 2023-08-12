@@ -24,8 +24,8 @@ footer .social-footer {
 footer .social-footer a svg {
     color: var(--fourth-color);
     font-size: 20px;
-    transition: all 0.3s;
-    cursor: pointer;
+    transition: all .3s;
+    cursor: url('../../assets/pointer.png'), default;
 }
 
 footer span {
@@ -35,7 +35,7 @@ footer span {
 footer span a {
     color: var(--fourth-color);
     font-size: 13px;
-    transition: all 0.3s;
+    transition: all .3s;
 }
 
 @media (hover:hover) {
@@ -48,8 +48,8 @@ footer span a {
     }
 }
 
-@media (max-width: 900px) {
-    footer span{
+@media only screen and (max-width: 900px) {
+    footer span {
         font-size: 9px;
     }
 

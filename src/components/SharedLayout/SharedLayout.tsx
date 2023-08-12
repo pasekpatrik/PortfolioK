@@ -1,13 +1,12 @@
+import { useState, useEffect } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCamera, faPenFancy, faBook } from '@fortawesome/free-solid-svg-icons'
+import { BounceLoader } from 'react-spinners'
 import { Outlet } from "react-router-dom"
 import NavBar from "../NavBar/NavBar"
 import SideBar from "../SideBar/SideBar"
 import Footer from "../Footer/Footer"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCamera, faPenFancy, faBook } from '@fortawesome/free-solid-svg-icons'
-import { BounceLoader } from 'react-spinners'
-
-import { useState, useEffect } from "react"
 
 const SharedLayout: React.FC = () => {
     const [fade, setFade] = useState<string>('')
@@ -42,25 +41,27 @@ const SharedLayout: React.FC = () => {
         setFade('')
     }, 1000)
 
-    return <>
-        <header >
-            <NavBar />
-        </header>
-        <main className={fade} >
-            <Outlet />
-            <SideBar />
-            <FontAwesomeIcon icon={faCamera} className='cameras' id='camera1' />
-            <FontAwesomeIcon icon={faCamera} className='cameras' id='camera2' />
-            <FontAwesomeIcon icon={faPenFancy} id="pencil" />
-            <FontAwesomeIcon icon={faBook} id="book" />
-        </main>
-        <footer>
-            <Footer />
-        </footer>
-        <div className={loaderClass}>
-            <BounceLoader color="#3f3542" size={150} loading={loader} />
-        </div>
-    </>
+    return (
+        <>
+            <header >
+                <NavBar />
+            </header>
+            <main className={fade} >
+                <Outlet />
+                <SideBar />
+                <FontAwesomeIcon icon={faCamera} className='cameras' id='camera1' />
+                <FontAwesomeIcon icon={faCamera} className='cameras' id='camera2' />
+                <FontAwesomeIcon icon={faPenFancy} id="pencil" />
+                <FontAwesomeIcon icon={faBook} id="book" />
+            </main>
+            <footer>
+                <Footer />
+            </footer>
+            <div className={loaderClass}>
+                <BounceLoader color="#3f3542" size={150} loading={loader} />
+            </div>
+        </>
+    )
 }
 
 export default SharedLayout

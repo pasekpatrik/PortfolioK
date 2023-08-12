@@ -26,7 +26,7 @@ const Form: React.FC = () => {
         setMessage('')
     }
 
-    return <>
+    return (
         <form onSubmit={sendEmail} >
             <div className="container-input">
                 <label>Jméno a přijmení *</label>
@@ -69,7 +69,7 @@ const Form: React.FC = () => {
 
             </div>
         </form>
-    </>
+    )
 }
 
 export default Form

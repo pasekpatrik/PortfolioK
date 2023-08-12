@@ -48,7 +48,7 @@ main {
     min-height: 100vh;
     padding: 0 8%;
 
-    background-image: linear-gradient(#f9f5f600, var(--primary-color)), url('../images/bg.jpeg');
+    background-image: linear-gradient(#f9f5f600, var(--primary-color)), url('../images/bg.webp');
     background-position: center;
     background-size: cover;
 
@@ -100,7 +100,7 @@ main figure {
     position: absolute;
     font-size: 120px;
     display: block;
-    transition: color 0.3s;
+    transition: color .3s;
     z-index: 0;
 }
 
@@ -121,7 +121,7 @@ main figure {
     bottom: 100px;
     left: 40px;
     font-size: 100px;
-    transition: color 0.3s;
+    transition: color .3s;
 }
 
 #book {
@@ -130,7 +130,7 @@ main figure {
     top: 100px;
     right: 40px;
     font-size: 100px;
-    transition: color 0.3s;
+    transition: color .3s;
 }
 
 .container-loader {

@@ -31,6 +31,7 @@
     font-size: 100px;
     cursor: url('../../assets/pointer.png'), default;
     transition: color .3s;
+    animation: move .8s infinite alternate;
 }
 
 @media (hover:hover) {
@@ -43,7 +44,13 @@
     }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
+    .section-photos svg {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
     .section-photos {
         min-height: 50vh;
         gap: 25px;
@@ -53,8 +60,14 @@
     .section-photos h4 {
         font-size: 2em;
     }
+}
 
-    .section-photos svg {
-        display: none;
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(15px);
     }
 }

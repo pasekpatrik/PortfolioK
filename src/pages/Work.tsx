@@ -1,9 +1,7 @@
 import PhotoGallery from "../components/PhotoGallery/PhotoGallery"
 
 const Work: React.FC = () => {
-  return <>
-    <PhotoGallery />
-  </>
+  return <PhotoGallery />
 }
 
 export default Work

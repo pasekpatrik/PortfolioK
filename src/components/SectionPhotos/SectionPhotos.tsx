@@ -13,7 +13,7 @@ interface Props {
     arrow?: boolean
 }
 
-const SectionPhotos: React.FC<Props> = ({ photos, heading, width, height, arrow }) => {
+const SectionPhotos: React.FC<Props> = ({ ...props }) => {
     useEffect(() => {
         const lightbox = new PhotoSwipeLightbox({
             gallery: '.photos',
@@ -40,16 +40,16 @@ const SectionPhotos: React.FC<Props> = ({ photos, heading, width, height, arrow 
 
     return (
         <section className='section-photos'>
-            <h4>{heading}</h4>
+            <h4>{props.heading}</h4>
             <div className='photos'>
                 {
-                    photos.map((photo: string, index: number) => {
+                    props.photos.map((photo: string, index: number) => {
                         return (
                             <a
                                 href={photo}
                                 target="_blank"
-                                data-pswp-width={width}
-                                data-pswp-height={height}
+                                data-pswp-width={props.width}
+                                data-pswp-height={props.height}
                                 key={index}
                             >
                                 <img src={photo} alt='fotogalerie' />
@@ -58,7 +58,7 @@ const SectionPhotos: React.FC<Props> = ({ photos, heading, width, height, arrow 
                     })
                 }
             </div>
-            {arrow && <VscChevronDown onClick={() => handlerScroll(heading)} />}
+            {props.arrow && <VscChevronDown onClick={() => handlerScroll(props.heading)} />}
         </section>
     )
 }

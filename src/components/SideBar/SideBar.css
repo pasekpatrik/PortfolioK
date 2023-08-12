@@ -28,7 +28,7 @@ ul li a span:nth-child(2) {
     display: grid;
     place-items: center;
     font-size: 24px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, .35) 0px 5px 15px;
 }
 
 ul li a span:nth-child(1) {
@@ -43,7 +43,7 @@ ul li a span:nth-child(1) {
     overflow: hidden;
     margin-right: 5px;
     border-radius: 0 50px 50px 0;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
 }
 
 ul li a span svg {
@@ -60,7 +60,7 @@ ul li a span svg {
     }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .social {
         display: none;
     }

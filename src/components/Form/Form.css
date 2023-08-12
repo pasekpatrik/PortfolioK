@@ -5,8 +5,8 @@ form {
     background-color: var(--fourth-color);
     border-radius: 8px;
     color: var(--primary-color);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
+    box-shadow: rgba(0, 0, 0, .35) 0px 5px 15px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +37,7 @@ form .input-text {
     font-size: 18px;
     color: var(--fourth-color);
 
-    transition: all 0.3s;
+    transition: all .3s;
 }
 
 form .input-text:focus {
@@ -54,7 +54,7 @@ form textarea {
     width: 320px;
 
     border-radius: 8px;
-    transition: all 0.3s;
+    transition: all .3s;
 }
 
 form textarea:focus {
@@ -75,7 +75,7 @@ form #submit {
 
     border-radius: 8px;
     cursor: url('../../assets/pointer.png'), default;
-    transition: all 0.3s;
+    transition: all .3s;
 }
 
 form #container-error {
@@ -88,7 +88,7 @@ form #container-error {
 }
 
 form #container-error p {
-    animation: opacity 0.3s;
+    animation: opacity .3s;
 }
 
 @media (hover:hover) {
@@ -97,7 +97,7 @@ form #container-error p {
     }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     form {
         width: 100%;
         margin-top: 30%;

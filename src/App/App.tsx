@@ -7,7 +7,7 @@ import SharedLayout from "../components/SharedLayout/SharedLayout"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 const App: React.FC = () => {
-    return <>
+    return (
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<SharedLayout />} >
@@ -18,7 +18,7 @@ const App: React.FC = () => {
                 </Route>
             </Routes>
         </BrowserRouter>
-    </>
+    )
 }
 
 export default App

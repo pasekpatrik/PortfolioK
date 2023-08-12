@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { NavLink } from 'react-router-dom'
-import logo from '../../images/K.png'
+import logo from '../../images/K.webp'
 
 import './NavBar.css'
 
@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
         newNavMenu.classList.remove('active')
     }
 
-    return <>
+    return (
         <nav className="navBar">
             <div className="container-logo">
                 <a href='/'><img src={logo} alt="Logo" id="nav-logo" width={60} height={60} /></a>
@@ -43,7 +43,7 @@ const NavBar: React.FC = () => {
                 <span className="bar"></span>
             </div>
         </nav>
-    </>
+    )
 }
 
 export default NavBar
