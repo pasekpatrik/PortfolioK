@@ -12,8 +12,6 @@ const PhotoGallery: React.FC = () => {
     const [hide, setHide] = useState<boolean>(false)
 
     useEffect(() => {
-
-
         const timeout = setTimeout(() => {
             setHide(true)
         }, 2500)

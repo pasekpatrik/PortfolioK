@@ -25,7 +25,7 @@ const Home: React.FC = () => {
             <article id='home-article'>
                 <h1 className='main-heading'>Zdravím,&nbsp;jsem<br /><span className='main-heading' ref={heading}></span></h1>
             </article>
-            <figure id='home-figure'>
+            <figure>
                 <img src={image} alt="Main photo" width={500} height={333} />
             </figure>
         </>
