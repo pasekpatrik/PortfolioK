@@ -4,4 +4,4 @@
 - npm install
 
 ### Rozběhnutí lokálního serveru
-- npm run client:dev (poslouchá na portu 3000)
+- npm run client:dev (poslouchá na portu 5173)
