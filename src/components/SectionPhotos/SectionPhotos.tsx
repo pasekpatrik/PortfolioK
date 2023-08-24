@@ -52,7 +52,7 @@ const SectionPhotos: React.FC<Props> = ({ ...props }) => {
                                 data-pswp-height={props.height}
                                 key={index}
                             >
-                                <img src={photo} alt='fotogalerie' width={props.width} height={props.height}/>
+                                <img src={photo} alt='fotogalerie' width={props.width} height={props.height} />
                             </a>
                         )
                     })

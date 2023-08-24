@@ -25,7 +25,7 @@ form .container-input {
 }
 
 form .input-text {
-    border: 2px solid var(--primary-color);
+    border: none;
     outline: none;
     background: var(--primary-color);
 
@@ -38,6 +38,10 @@ form .input-text {
     color: var(--fourth-color);
 
     transition: all .3s;
+}
+
+form .input-text.error {
+    border: 2.8px solid var(--third-color);
 }
 
 form .input-text:focus {
@@ -78,17 +82,41 @@ form #submit {
     transition: all .3s;
 }
 
-form #container-error {
-    height: 20px;
-    width: 320px;
+#error {
+    height: 80px;
+    width: 280px;
+    padding: 0 10px;
+
+    font-size: 14px;
+    color: var(--primary-color);
+
+    border-radius: 8px;
+    background-color: var(--fourth-color);
+    box-shadow: rgba(0, 0, 0, .35) 0px 5px 15px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: absolute;
+    top: -10%;
+    transition: top 1s;
 }
 
-form #container-error p {
-    animation: opacity .3s;
+#error div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px;
+}
+
+#error div svg {
+    font-size: 30px;
+}
+
+#error.show {
+    top: 100px;
 }
 
 @media (hover:hover) {
