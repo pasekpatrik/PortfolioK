@@ -10,7 +10,7 @@ interface Props {
     photos: string[],
     width: number,
     height: number,
-    arrow?: boolean
+    arrow?: boolean,
 }
 
 const SectionPhotos: React.FC<Props> = ({ ...props }) => {
@@ -52,7 +52,7 @@ const SectionPhotos: React.FC<Props> = ({ ...props }) => {
                                 data-pswp-height={props.height}
                                 key={index}
                             >
-                                <img src={photo} alt='fotogalerie' />
+                                <img src={photo} alt='fotogalerie' width={props.width} height={props.height}/>
                             </a>
                         )
                     })

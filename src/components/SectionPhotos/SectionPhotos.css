@@ -1,5 +1,6 @@
 .section-photos {
-    min-height: 100vh;
+    min-height: 42vh;
+    padding-top: 100px;
 
     display: flex;
     justify-content: center;
@@ -14,7 +15,6 @@
 }
 
 .section-photos .photos {
-    min-height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,6 @@
 }
 
 .section-photos .photos img {
-    width: 250px;
     transition: transform .3s;
 }
 
@@ -51,19 +50,27 @@
     }
 
     .section-photos {
-        min-height: 50vh;
         justify-content: flex-start;
+    }
+
+    .section-photos .photos img {
+        width: 250px;
     }
 }
 
 @media only screen and (max-width: 900px) {
     .section-photos {
         gap: 25px;
+        padding-top: 0;
         margin-bottom: 25px;
     }
 
     .section-photos h4 {
         font-size: 2em;
+    }
+
+    .section-photos .photos img {
+        width: 220px;
     }
 }
 

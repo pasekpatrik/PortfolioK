@@ -1,3 +1,10 @@
+.container-photo {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
 #container-loader-photo {
     height: 100vh;
     width: 100%;
@@ -21,13 +28,6 @@
 }
 
 @media (hover:hover) {
-    .container-photo #free-photos img:hover {
-        transform: scale(1.05);
-    }
-
-    .container-photo svg:hover {
-        color: var(--third-color);
-    }
 }
 
 @media only screen and (max-width: 1200px) {

@@ -29,14 +29,12 @@ const PhotoGallery: React.FC = () => {
                     photos={creation}
                     width={300}
                     height={200}
-                    arrow
                 />
                 <SectionPhotos
                     heading='Móda'
                     photos={fashion}
                     width={300}
                     height={450}
-                    arrow
                 />
                 <SectionPhotos
                     heading='Portréty'
