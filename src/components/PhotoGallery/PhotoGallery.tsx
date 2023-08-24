@@ -25,7 +25,7 @@ const PhotoGallery: React.FC = () => {
         <>
             <div className='container-photo'>
                 <SectionPhotos
-                    heading='Volná tvorba'
+                    heading='Volná&nbsp;tvorba'
                     photos={creation}
                     width={300}
                     height={200}
