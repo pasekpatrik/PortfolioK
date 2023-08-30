@@ -1,0 +1,17 @@
+#review {
+    min-height: 50vh;
+
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 22px;
+
+    transform: translateY(-80px);
+}
+
+@media only screen and (max-width: 900px) {
+    #review {
+        transform: translateY(0);
+    }
+}

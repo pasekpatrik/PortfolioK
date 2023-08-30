@@ -1,0 +1,92 @@
+.background {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 8%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(#f9f5f600, var(--primary-color)), url('../../images/bg.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.background article {
+    min-height: 100%;
+    width: 50%;
+    padding: 0 8%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    flex-direction: column;
+    gap: 15px;
+}
+
+.background .typed-cursor {
+    font-size: 66px;
+}
+
+.background #home-article .main-heading {
+    font-size: 52px;
+}
+
+.background article p {
+    font-size: 20px;
+}
+
+.background figure {
+    min-height: 100%;
+    width: 50%;
+    padding: 0 8%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .background img {
+        width: 360px;
+        height: 100%;
+    }
+
+    .background #home-article .main-heading {
+        font-size: 36px;
+    }
+
+    .background .typed-cursor {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .background #home-article {
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .background {
+        flex-direction: column;
+    }
+
+    .background img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .background article {
+        width: 100%;
+        font-size: .8em;
+    }
+
+    .background figure {
+        width: 100%;
+        margin-top: 10%;
+    }
+}

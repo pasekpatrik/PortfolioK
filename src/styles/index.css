@@ -44,56 +44,8 @@ img {
     border-radius: 8px;
 }
 
-main {
-    min-height: 100vh;
-    padding: 0 8%;
-
-    background-image: linear-gradient(#f9f5f600, var(--primary-color)), url('../images/bg.webp');
-    background-position: center;
-    background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 main.fade {
-    animation: fade 1s;
-}
-
-main article {
-    min-height: 100%;
-    width: 50%;
-    padding: 0 8%;
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
-    flex-direction: column;
-    gap: 15px;
-}
-
-main .typed-cursor {
-    font-size: 66px;
-}
-
-main #home-article .main-heading {
-    font-size: 52px;
-}
-
-main article p {
-    font-size: 20px;
-}
-
-main figure {
-    min-height: 100%;
-    width: 50%;
-    padding: 0 8%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    animation: fade .8s;
 }
 
 .cameras {
@@ -147,7 +99,13 @@ main figure {
     top: 0;
     background-color: var(--primary-color);
 
+    transition: opacity .5s, visibility .5s;
     z-index: 100;
+}
+
+.container-loader.hide {
+    opacity: 0;
+    visibility: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -182,6 +140,20 @@ main figure {
 
     #book:hover {
         color: var(--third-color);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .cameras {
+        display: none;
+    }
+
+    #pencil {
+        display: none;
+    }
+
+    #book {
+        display: none;
     }
 }
 

@@ -1,6 +1,6 @@
 ## Portfolio Kateřina
 
-### Instalace
+### Instalace Projektu
 - npm install
 
 ### Rozběhnutí lokálního serveru

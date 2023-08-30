@@ -61,6 +61,10 @@ form textarea {
     transition: all .3s;
 }
 
+form textarea.error {
+    border: 2.8px solid var(--third-color);
+}
+
 form textarea:focus {
     width: 336px;
 }

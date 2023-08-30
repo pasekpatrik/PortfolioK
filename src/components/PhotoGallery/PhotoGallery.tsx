@@ -14,7 +14,7 @@ const PhotoGallery: React.FC = () => {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setHide(true)
-        }, 2500)
+        }, 1000)
 
         return () => {
             clearTimeout(timeout)
@@ -27,20 +27,26 @@ const PhotoGallery: React.FC = () => {
                 <SectionPhotos
                     heading='Volná&nbsp;tvorba'
                     photos={creation}
-                    width={300}
-                    height={200}
+                    width={220}
+                    height={150}
+                    width_spwp={300}
+                    height_spwp={200}
                 />
                 <SectionPhotos
                     heading='Móda'
                     photos={fashion}
-                    width={300}
-                    height={450}
+                    width={150}
+                    height={225}
+                    width_spwp={300}
+                    height_spwp={450}
                 />
                 <SectionPhotos
                     heading='Portréty'
                     photos={portraits}
-                    width={300}
-                    height={200}
+                    width={220}
+                    height={150}
+                    width_spwp={300}
+                    height_spwp={200}
                 />
             </div>
             <div

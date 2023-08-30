@@ -15,7 +15,7 @@ const Form: React.FC = () => {
     const sendEmail = (e: React.SyntheticEvent) => {
         e.preventDefault()
 
-        if (fullName && email) {
+        if (fullName && email && message) {
             const paramsUser = {
                 from_name: fullName,
                 from_email: email,
@@ -23,6 +23,10 @@ const Form: React.FC = () => {
             }
 
             emailjs.send('service_4nma87d', 'template_lf5z50k', paramsUser, 'YQas67PsLX9amK9G6')
+
+            setFullName('')
+            setEmail('')
+            setMessage('')
             setAll(true)
         }
 
@@ -31,9 +35,6 @@ const Form: React.FC = () => {
             setAll(false)
         }, 4000)
 
-        setFullName('')
-        setEmail('')
-        setMessage('')
         setModal(true)
     }
 
@@ -45,7 +46,7 @@ const Form: React.FC = () => {
 
                     <input
                         type="text"
-                        className={fullName ? "input-text" : 'input-text error'}
+                        className={fullName ? 'input-text' : 'input-text error'}
                         id="input-name"
                         onChange={(e) => setFullName(e.target.value)}
                         value={fullName}
@@ -57,7 +58,7 @@ const Form: React.FC = () => {
 
                     <input
                         type="email"
-                        className={email ? "input-text" : 'input-text error'}
+                        className={email ? 'input-text' : 'input-text error'}
                         id="input-email"
                         onChange={(e) => setEmail(e.target.value)}
                         value={email}
@@ -65,10 +66,11 @@ const Form: React.FC = () => {
 
                 </div>
                 <div className="container-input">
-                    <label>Zpráva</label>
+                    <label>Zpráva *</label>
 
                     <textarea
                         name="textarea"
+                        className={message ? '' : 'error'}
                         cols={8}
                         rows={5}
                         onChange={(e) => setMessage(e.target.value)}

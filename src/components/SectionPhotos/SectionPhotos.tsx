@@ -10,6 +10,8 @@ interface Props {
     photos: string[],
     width: number,
     height: number,
+    width_spwp: number,
+    height_spwp: number,
     arrow?: boolean,
 }
 
@@ -48,8 +50,8 @@ const SectionPhotos: React.FC<Props> = ({ ...props }) => {
                             <a
                                 href={photo}
                                 target="_blank"
-                                data-pswp-width={props.width}
-                                data-pswp-height={props.height}
+                                data-pswp-width={props.width_spwp}
+                                data-pswp-height={props.height_spwp}
                                 key={index}
                             >
                                 <img src={photo} alt='fotogalerie' width={props.width} height={props.height} />
