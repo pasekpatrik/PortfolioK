@@ -1,4 +1,3 @@
-import Review from '../../components/Review/Review'
 import Background from '../../components/Background/Background'
 import image from '../../images/img3.webp'
 
@@ -16,11 +15,6 @@ const About: React.FC = () => {
                     <img src={image} alt="About photo" width={500} height={333} />
                 </figure>
             </Background>
-            <div id="review">
-                <Review />
-                <Review />
-                <Review />
-            </div>
         </>
     )
 }

@@ -119,6 +119,14 @@ form #submit {
     font-size: 30px;
 }
 
+#error div #green {
+    color: #32CD32;
+}
+
+#error div #red {
+    color: #DC143C;
+}
+
 #error.show {
     top: 100px;
 }

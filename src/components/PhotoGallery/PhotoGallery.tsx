@@ -4,6 +4,7 @@ import { creation } from '../../data/creation'
 import { fashion } from '../../data/fashion'
 import { portraits } from '../../data/portraits'
 
+import Background from '../Background/Background'
 import SectionPhotos from '../SectionPhotos/SectionPhotos'
 
 import './PhotoGallery.css'
@@ -24,22 +25,27 @@ const PhotoGallery: React.FC = () => {
     return (
         <>
             <div className='container-photo'>
-                <SectionPhotos
-                    heading='Volná&nbsp;tvorba'
-                    photos={creation}
-                    width={220}
-                    height={150}
-                    width_spwp={300}
-                    height_spwp={200}
-                />
-                <SectionPhotos
-                    heading='Móda'
-                    photos={fashion}
-                    width={150}
-                    height={225}
-                    width_spwp={300}
-                    height_spwp={450}
-                />
+                <Background>
+                    <div>
+                        <SectionPhotos
+                            heading='Volná&nbsp;tvorba'
+                            photos={creation}
+                            width={220}
+                            height={150}
+                            width_spwp={300}
+                            height_spwp={200}
+                        />
+                        <SectionPhotos
+                            heading='Móda'
+                            photos={fashion}
+                            width={150}
+                            height={225}
+                            width_spwp={300}
+                            height_spwp={450}
+                        />
+                    </div>
+                </Background>
+
                 <SectionPhotos
                     heading='Portréty'
                     photos={portraits}

@@ -85,11 +85,11 @@ const Form: React.FC = () => {
                     all ?
                         <div>
                             <span>Formulář byl odeslán</span>
-                            <BiMessageCheck />
+                            <BiMessageCheck id='green'/>
                         </div> :
                         <div>
                             <span>Vyplňte povinná pole *</span>
-                            <BiMessageError />
+                            <BiMessageError id='red'/>
                         </div>
                 }
             </div>
